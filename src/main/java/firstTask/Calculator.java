@@ -29,21 +29,11 @@ public class Calculator {
       if (a == null || b == null)
         throw new IllegalStateException("Not enough operands!");
       switch (op) {
-        case SUM:
-          result = a + b;
-          break;
-        case SUB:
-          result = a - b;
-          break;
-        case MULT:
-          result = a * b;
-          break;
-        case DIV:
-          result = a / b;
-          break;
-        case POW:
-          result = Math.pow(a, b);
-          break;
+        case SUM -> result = a + b;
+        case SUB -> result = a - b;
+        case MULT -> result = a * b;
+        case DIV -> result = a / b;
+        case POW -> result = Math.pow(a, b);
       }
       return this;
     }
